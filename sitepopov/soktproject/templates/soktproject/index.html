@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link type="text/css" href="{% static 'soktproject/css/index_styles.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_adapt/index_styles_adapt.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_anim/index_styles_anim.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+        <main>
+            <div class="main-wrapper">
+                <div class="main-wrapper-text-block">
+                    <div class="main-wrapper-hashtag">
+                        #Проект_популяризации_отечественных_героев
+                    </div>
+                    <h1 class="main-wrapper-title">
+                        Биография <span>великого физика <span class="fat">—</span>&shy</span> А.&nbspС.&nbspПопова
+                    </h1>
+                    <h2 class="main-wrapper-main-text">
+                        <span>Александр Степанович Попов</span> - русский физик и электротехник. Профессор физики ЭТИ,
+                        первый выборный
+                        директор Электротехнического института императора Александра III (ныне СПбГЭТУ "ЛЭТИ").
+                    </h2>
+                    <div class="main-wrapper-buttons-block">
+                        <a href="{% url 'history' %}">
+                            <div class="main-wrapper-buttons-block-button-history main-wrapper-button">
+                                <span>История</span>
+                            </div>
+                        </a>
+                        <div class="main-wrapper-buttons-block-button-museum main-wrapper-button">
+                            <span>Интерактивный музей «Комната А.&nbspС.&nbspПопова» →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper-background-picture">
+                    <img src="{% static 'soktproject/img/popov-main.png' %}" alt="popov-main.png">
+                </div>
+            </div>
+        </main>
+{% endblock %}

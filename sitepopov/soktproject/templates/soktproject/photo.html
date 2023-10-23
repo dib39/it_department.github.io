@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link type="text/css" href="{% static 'soktproject/css/photo_styles.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_adapt/photo_styles_adapt.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_anim/photo_styles_anim.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+        <main>
+            <div class="main-photo-block">
+                <div class="photo-block-title">ФОТО музея <span>А.&nbspС.&nbspпопова</span> в лэти</div>
+                <div class="photo-block-photos">
+                    <img src="{% static 'soktproject/img/popov.jpg' %}" alt="museum-photo">
+                    <img src="{% static 'soktproject/img/museum1.jpg' %}" alt="museum-photo">
+                    <img src="{% static 'soktproject/img/museum2.jpg' %}" alt="museum-photo">
+                    <img src="{% static 'soktproject/img/museum3.jpg' %}" alt="museum-photo">
+                    <img src="{% static 'soktproject/img/museum4.jpg' %}" alt="museum-photo">
+                    <img src="{% static 'soktproject/img/museum5.jpg' %}" alt="museum-photo">
+                </div>
+            </div>
+        </main>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link type="text/css" href="{% static 'soktproject/css/way_styles.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_adapt/way_styles_adapt.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'soktproject/css/css_anim/way_styles_anim.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+        <main>
+            <div class="main-map-block">
+                <h1 class="map-block-title">Где находится <span>комната А.&nbspС.&nbspПопова?</span></h1>
+                <div class="map-block-text">Мемориальный музей-квартира А.С. Попова находится в жилом доме
+                    Электротехнического института, построенном одновременно с учебным корпусом. В этом доме жили многие
+                    крупные ученые-профессора ЛЭТИ. <br>
+                    Адрес: <span>
+                        ул. Профессора Попова, дом 5, корп. Д, 3-й этаж, кв. 33 (вход со стороны памятника А.С.
+                        Попову).
+                    </span></div>
+                <div class="map-block-map">
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d897cbde01efbdd5e44aaef57c2a5771f7cdb6a8aa9a33675171a76ad84426a&amp;source=constructor" width="1100" height="558" frameborder="0"></iframe>
+                </div>
+            </div>
+        </main>
+{% endblock %}
+
